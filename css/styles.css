@@ -1,15 +1,24 @@
 body {
   margin: 0px;
-  display: flex;
   font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
 }
 .bLeft {
   width: 300px;
   background-color: #e8e8e8;
   min-height: 1000px;
 }
+/* div {
+  resize: both;
+  overflow: auto;
+} */
 .bLeft div {
   margin: 0px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
 }
 .left-head {
   /* background-color: #353535; */
@@ -92,7 +101,7 @@ button:hover {
 .item {
   height: 80px;
   background-color: #f5f5f5;
-  box-shadow: 2px 0px 2px 0px rgb(150, 150, 150);
+  box-shadow: 0px 0px 2px 0px rgb(150, 150, 150);
   display: flex;
   justify-content: space-between;
 }
@@ -115,7 +124,7 @@ button:hover {
   color: #4e4e4e;
 }
 .rItem {
-  min-width: 300px;
+  /* min-width: 300px; */
   /* background-color: blue; */
   display: flex;
   align-items: center;
@@ -140,7 +149,7 @@ button:hover {
   position: absolute;
   right: 0;
   background-color: #f9f9f9;
-  min-width: 160px;
+  /* min-width: 160px; */
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -166,7 +175,6 @@ button:hover {
 
 .last-item {
   height: 40px;
-  /* background-color: blue; */
   display: flex;
   align-items: center;
   justify-content: center;
