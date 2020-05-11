@@ -2,9 +2,9 @@ body {
   margin: 0px;
   font-family: sans-serif;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row;
   justify-content: center;
-  align-content: center;
+  align-content: center; */
 }
 .bLeft {
   width: 300px;
@@ -84,7 +84,7 @@ h10 {
   margin: 0px 40px;
   color: #707070;
 }
-.quick-view h2 {
+.quick-view h4 {
   padding: 0px 0px 0px 40px;
   font-family: sans-serif;
 }
