@@ -117,7 +117,7 @@ h10 {
   justify-content: space-between;
 }
 .lItem, .status {
-  margin-left: 40px;
+  margin: 0px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
