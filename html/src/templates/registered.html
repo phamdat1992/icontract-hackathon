@@ -1,0 +1,96 @@
+{% extends 'layout/default.njk' %}
+
+{% block content %}
+<header class="header">
+</header>
+
+<main class='form-info'>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h4>Thông tin doanh nghiệp</h4>
+
+                <div class="registered-info">
+                    <div> <span>Tên doanh nghiệp:</span> Công ty TNHH Đông Á</div>
+                    <div> <span>Mã số doanh nghiệp:</span> 41O8036796 </div>
+                    <div> <span>Mã số thuế:</span> 101024198123 </div>
+                    <div> <span>Địa chỉ:</span> 191 Chấn Hưng, Phường 06, Quận Tân Bình, TP. HCM</div>
+                    <div> <span>Số điện thoại doanh nghiệp:</span> 0283222332</div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <h4>Thông tin người đại diện</h4>
+
+                <div class="registered-info">
+                    <div> <span>Họ tên:</span> Nguyễn Văn An</div>
+                    <div> <span>CMND:</span> 241563388</div>
+                    <div> <span>Ngày sinh:</span> 02/03/1989</div>
+                    <div> <span>Ngày sinh:</span> 02/03/1989</div>
+                    <div> <span>Nơi cấp:</span> DakLak</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-bottom"></div>
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="electric-sign">
+                    <h5>Chữ ký số</h5>
+                    <div>
+                        <img src="./images/electric-sign.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-bottom"></div>
+
+        <div class="row">
+            <div class="col-sm">
+                <h5> Kích hoạt Google Authenticator </h5>
+                <p>Xin chào, <strong>Nguyễn Thanh Lộc</strong>. Để kích hoạt Google Authenticator vui lòng thực hiện
+                    các bước sau: </p>
+                <ul>
+                    <li>Bước 1: Mở ứng dụng Google Authenticator </li>
+                    <li>
+                        Bước 2:
+                        <ul>
+                            <li>Cách 1: Quét mã QR</li>
+                            <li>Cách 2: Nhập tên tài khoản (domain) và khoá (secret key).</li>
+                        </ul>
+                    </li>
+                    <li>Bước 3: Nhập 6 số trên ứng dụng vào ô OTP. Click "Active" </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Secret key</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">OTP</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" class="btn btn-info">
+                Active
+                <i class="icontract-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+</main>
+{% endblock %}

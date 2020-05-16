@@ -1,0 +1,77 @@
+{% extends 'layout/default.njk' %}
+
+{% block content %}
+<header class="header">
+</header>
+
+<main class='form-info'>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-sm">
+                    <h4>Thông tin doanh nghiệp</h4>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Tên doanh nghiệp</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Mã số doanh nghiệp</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Mã số thuế</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Địa chỉ</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Số điện thoại doanh nghiệp</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <h4>Thông tin người đại diện</h4>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Họ tên</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">CMND</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Ngày sinh</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Ngày cấp</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Nơi cấp</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons text-right">
+                <button type="submit" class="btn btn-info">
+                    Đăng ký
+                    <i class="icontract-arrow-right"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</main>
+{% endblock %}
