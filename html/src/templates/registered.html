@@ -32,11 +32,9 @@
             </div>
         </div>
 
-        <div class="border-bottom"></div>
-
         <div class="row">
             <div class="col-sm">
-                <div class="electric-sign">
+                <div class="electric-sign mb-5">
                     <h5>Chữ ký số</h5>
                     <div>
                         <img src="./images/electric-sign.png" alt="">
@@ -45,51 +43,65 @@
             </div>
         </div>
 
-        <div class="border-bottom"></div>
-
         <div class="row">
             <div class="col-sm">
-                <h5> Kích hoạt Google Authenticator </h5>
-                <p>Xin chào, <strong>Nguyễn Thanh Lộc</strong>. Để kích hoạt Google Authenticator vui lòng thực hiện
-                    các bước sau: </p>
-                <ul>
-                    <li>Bước 1: Mở ứng dụng Google Authenticator </li>
-                    <li>
-                        Bước 2:
-                        <ul>
-                            <li>Cách 1: Quét mã QR</li>
-                            <li>Cách 2: Nhập tên tài khoản (domain) và khoá (secret key).</li>
-                        </ul>
-                    </li>
-                    <li>Bước 3: Nhập 6 số trên ứng dụng vào ô OTP. Click "Active" </li>
-                </ul>
+                <div class="qr-code-google mb-5">
+                    <h5> Active Google Authenticator </h5>
+                    <p>Xin chào, <strong>Nguyễn Thanh Lộc</strong>. Để kích hoạt Google Authenticator vui lòng thực hiện
+                        các bước sau: </p>
+                    <ul>
+                        <li>Bước 1: Mở ứng dụng Google Authenticator </li>
+                        <li>
+                            Bước 2: Tạo trình xác thực mới bằng 2 cách:
+                            <ul>
+                                <li>Cách 1: Quét mã QR</li>
+                                <li>Cách 2: Nhập tên tài khoản (domain) và khoá (secret key).</li>
+                            </ul>
+                        </li>
+                        <li>Bước 3: Nhập 6 số trên ứng dụng vào ô OTP. Click "Active" </li>
+                    </ul>
+
+                    <div class="qr-code mb-3 mt-3">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                QR Code:
+                            </div>
+                            <div class="col-sm-9">
+                                <img src="./images//qrcode.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Secret key</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">OTP</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="./dashboard.html" class="btn btn-info">
+                            Active
+                            <i class="icontract-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Secret key</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-
-                <div class="form-group">
-                    <label for="exampleInputPassword1">OTP</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-            </div>
-        </div>
-
-        <div class="buttons">
-            <button type="submit" class="btn btn-info">
-                Active
-                <i class="icontract-arrow-right"></i>
-            </button>
         </div>
     </div>
 </main>

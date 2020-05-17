@@ -1,0 +1,113 @@
+{% extends 'layout/default.njk' %}
+
+{% block content %}
+<main class="dashboard">
+    <aside class="menu">
+        <a class="btn btn-info btn-create-new">
+            <i class="icontract-new"></i>
+            New
+        </a>
+
+        <ul class="menu-list">
+            <li class="active">
+                <a>
+                    <i class="icontract-docs"></i>
+                    My Documents
+                </a>
+            </li>
+            <li class="active">
+                <a>
+                    <i class="icontract-briefcase"></i>
+                    PowerForms
+                </a>
+            </li>
+        </ul>
+
+        <p class="menu-label">
+            QUICK VIEWS
+        </p>
+
+        <ul class="menu-list">
+            <li>
+                <a><i class="icontract-action"></i>
+                    Action Required
+                </a>
+            </li>
+            <li>
+                <a>
+                    <i class="icontract-waiting"></i>
+                    Waiting for Others
+                </a>
+            </li>
+            <li>
+                <a>
+                    <i class="icontract-complete"></i>
+                    Completed
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <div class="content">
+        <div class="content__header">
+            <h3>New Contract</h3>
+        </div>
+
+        <div class="content__main">
+            <div class='form-group-custom form-group-custom--file mb-4'>
+                <label>
+                    <input hidden type='file' />
+                    <div>
+                        <strong>Upload contract</strong>
+                        <p class="file-name"></p>
+                        <p>Supported format: PDF, DOC, DOCX - Max size: 4 MB</p>
+                    </div>
+                </label>
+            </div>
+
+            <div class="add-receiver mb-5">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Tên</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Email</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <div class="text-right">
+                            <button class="btn btn-info btn-sm">
+                                Thêm người nhận
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Tiêu đề</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Nội dung</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <a href="./review-contract.html" class="btn btn-info">
+                        Tiếp tục
+                        <i class="icontract-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% block review %}{% endblock %}
+</main>
+{% endblock %}

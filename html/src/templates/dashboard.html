@@ -2,58 +2,103 @@
 
 {% block content %}
 
-<main class="row">
-    <aside class="col-sm-2">
-        <button class="btn btn-info">
+<main class="dashboard">
+    <aside class="menu">
+        <a href="./create-contract.html" class="btn btn-info btn-create-new">
             <i class="icontract-new"></i>
             New
-        </button>
+        </a>
 
-        <button type="button" class="btn lbtn btn-light">
-            <i class="icontract-docs"></i>
-            My Documents
-        </button>
+        <ul class="menu-list">
+            <li class="active">
+                <a>
+                    <i class="icontract-docs"></i>
+                    My Documents
+                </a>
+            </li>
+            <li class="active">
+                <a>
+                    <i class="icontract-briefcase"></i>
+                    PowerForms
+                </a>
+            </li>
+        </ul>
 
-        <h5 class="wv-title">QUICK VIEWS</h5>
+        <p class="menu-label">
+            QUICK VIEWS
+        </p>
 
-        <button type="button" class="btn lbtn btn-light">
-            <i class="icontract-action"></i>
-            Action Required
-        </button>
-
-        <button type="button" class="btn lbtn btn-light">
-            <i class="icontract-waiting"></i>
-            Waiting for Others
-        </button>
-
-        <button type="button" class="btn lbtn btn-light">
-            <i class="icontract-complete"></i>
-            Completed
-        </button>
+        <ul class="menu-list">
+            <li>
+                <a><i class="icontract-action"></i>
+                    Action Required
+                </a>
+            </li>
+            <li>
+                <a>
+                    <i class="icontract-waiting"></i>
+                    Waiting for Others
+                </a>
+            </li>
+            <li>
+                <a>
+                    <i class="icontract-complete"></i>
+                    Completed
+                </a>
+            </li>
+        </ul>
     </aside>
 
-    <div class="col-sm-10">
-        <h3 class="hItem">My Documents</h3>
-        <div class="filter-by">
-            <h10>Filtered by:</h10> Date (Last 6 Months)
-        </div>
-        <div class="list-content">
-            {% for i in range(0, 4) %}
-            <div class="item">
-                <div class="lItem">
-                    <div class="title">Please DocuSign: TestPA.doc</div>
-                    <div class="to">To: John Smith, Seth Williams</div>
+    <div class="content">
+        <div class="content__header">
+            <h3>My Documents</h3>
+            <div class="filter">
+                <div class="filter__by">
+                    Filtered by: Date (Last 6 Months)
                 </div>
-                <div class="rItem">
-                    <div class="status">
-                        <div class="stt1">Completed</div>
-                        <div class="last-change">
-                            Last change on 5/23/2017 | 03:30:05 pm
+                <div class="filter__actions">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Search all documents">
+                        <div class="input-group-append">
+                            <button class="btn btn-light-2 border">
+                                Search
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            {% endfor %}
+        </div>
+
+        <div class="content__main">
+            <div class="items">
+                {% for i in range(0, 4) %}
+                <div class="item">
+                    <div class="item__info">
+                        <div class="item__info__title">Please DocuSign: TestPA.doc</div>
+                        <div class="item__info__to">To: John Smith, Seth Williams</div>
+                    </div>
+                    <div class="item__status">
+                        <div class="current">Completed</div>
+                        <div class="last-change">
+                            Last change on 5/23/2017 | 03:30:05 pm
+                        </div>
+                    </div>
+                    <div class="item__action">
+                        <div class="dropdown">
+                            <button class="btn btn-light-2 dropdown-toggle btn-sm" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                actions
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Forward</a>
+                                <a class="dropdown-item" href="#">Create a copy</a>
+                                <a class="dropdown-item" href="#">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </main>

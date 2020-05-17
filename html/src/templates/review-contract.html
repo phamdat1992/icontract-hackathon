@@ -1,0 +1,20 @@
+{% extends 'layout/default.njk' %}
+
+{% block content %}
+<div class="review-contract">
+    <div class="review-wrapper">
+        <embed src="./images/dont-make-me-think-revisited.pdf" type="application/pdf" />
+    </div>
+
+    <div class="buttons text-center">
+        <button type="button" class="btn btn-light">
+            Huỷ
+        </button>
+        <a href="./review-contract-otp.html" class="btn btn-info">
+            Ký hợp đồng
+        </a>
+    </div>
+</div>
+
+{% block otp %}{% endblock %}
+{% endblock %}
