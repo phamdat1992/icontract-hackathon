@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Icontract - Demo UI</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="fonts/style.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+    </head>
+
+    <body class="">
+        
+<main class="dashboard">
+    <aside class="menu">
+        <a class="btn btn-info btn-create-new">
+            <i class="icontract-new"></i>
+            New
+        </a>
+
+        <ul class="menu-list">
+            <li class="active">
+                <a>
+                    <i class="icontract-docs"></i>
+                    My Documents
+                </a>
+            </li>
+            <li class="active">
+                <a>
+                    <i class="icontract-briefcase"></i>
+                    PowerForms
+                </a>
+            </li>
+        </ul>
+
+        <p class="menu-label">
+            QUICK VIEWS
+        </p>
+
+        <ul class="menu-list">
+            <li>
+                <a><i class="icontract-action"></i>
+                    Action Required
+                </a>
+            </li>
+            <li>
+                <a>
+                    <i class="icontract-waiting"></i>
+                    Waiting for Others
+                </a>
+            </li>
+            <li>
+                <a>
+                    <i class="icontract-complete"></i>
+                    Completed
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <div class="content">
+        <div class="content__header">
+            <h3>New Contract</h3>
+        </div>
+
+        <div class="content__main">
+            <div class='form-group-custom form-group-custom--file mb-4'>
+                <label>
+                    <input hidden type='file' />
+                    <div>
+                        <strong>Upload contract</strong>
+                        <p class="file-name"></p>
+                        <p>Supported format: PDF, DOC, DOCX - Max size: 4 MB</p>
+                    </div>
+                </label>
+            </div>
+
+            <div class="add-receiver mb-5">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Tên</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Email</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <div class="text-right">
+                            <button class="btn btn-info btn-sm">
+                                Thêm người nhận
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Tiêu đề</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Nội dung</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <a href="./review-contract.html" class="btn btn-info">
+                        Tiếp tục
+                        <i class="icontract-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="http://localhost:3000/app.js"></script>
+    </body>
+</html>

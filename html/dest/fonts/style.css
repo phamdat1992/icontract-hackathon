@@ -1,0 +1,465 @@
+@font-face {
+  font-family: 'icontract';
+  src:  url('fonts/icontract.eot?is26qd');
+  src:  url('fonts/icontract.eot?is26qd#iefix') format('embedded-opentype'),
+    url('fonts/icontract.ttf?is26qd') format('truetype'),
+    url('fonts/icontract.woff?is26qd') format('woff'),
+    url('fonts/icontract.svg?is26qd#icontract') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icontract-"], [class*=" icontract-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icontract' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icontract-action:before {
+  content: "\e98c";
+}
+.icontract-complete:before {
+  content: "\e98d";
+}
+.icontract-del:before {
+  content: "\e98e";
+}
+.icontract-docs:before {
+  content: "\e98f";
+}
+.icontract-new:before {
+  content: "\e990";
+}
+.icontract-waiting:before {
+  content: "\e991";
+}
+.icontract-alarm-fill:before {
+  content: "\e900";
+}
+.icontract-alarm:before {
+  content: "\e901";
+}
+.icontract-alt:before {
+  content: "\e902";
+}
+.icontract-app-indicator:before {
+  content: "\e903";
+}
+.icontract-app:before {
+  content: "\e904";
+}
+.icontract-archive-fill:before {
+  content: "\e905";
+}
+.icontract-archive:before {
+  content: "\e906";
+}
+.icontract-arrow-90deg-down:before {
+  content: "\e907";
+}
+.icontract-arrow-90deg-left:before {
+  content: "\e908";
+}
+.icontract-arrow-90deg-right:before {
+  content: "\e909";
+}
+.icontract-arrow-90deg-up:before {
+  content: "\e90a";
+}
+.icontract-arrow-bar-down:before {
+  content: "\e90b";
+}
+.icontract-arrow-bar-left:before {
+  content: "\e90c";
+}
+.icontract-arrow-bar-right:before {
+  content: "\e90d";
+}
+.icontract-arrow-bar-up:before {
+  content: "\e90e";
+}
+.icontract-arrow-clockwise:before {
+  content: "\e90f";
+}
+.icontract-arrow-counterclockwise:before {
+  content: "\e910";
+}
+.icontract-arrow-down-left:before {
+  content: "\e911";
+}
+.icontract-arrow-down-right:before {
+  content: "\e912";
+}
+.icontract-arrow-down-short:before {
+  content: "\e913";
+}
+.icontract-arrow-down:before {
+  content: "\e914";
+}
+.icontract-arrow-left-right:before {
+  content: "\e915";
+}
+.icontract-arrow-left-short:before {
+  content: "\e916";
+}
+.icontract-arrow-left:before {
+  content: "\e917";
+}
+.icontract-arrow-repeat:before {
+  content: "\e918";
+}
+.icontract-arrow-return-left:before {
+  content: "\e919";
+}
+.icontract-arrow-return-right:before {
+  content: "\e91a";
+}
+.icontract-arrow-right-short:before {
+  content: "\e91b";
+}
+.icontract-arrow-right:before {
+  content: "\e91c";
+}
+.icontract-arrow-up-down:before {
+  content: "\e91d";
+}
+.icontract-arrow-up-left:before {
+  content: "\e91e";
+}
+.icontract-arrow-up-right:before {
+  content: "\e91f";
+}
+.icontract-arrow-up-short:before {
+  content: "\e920";
+}
+.icontract-arrow-up:before {
+  content: "\e921";
+}
+.icontract-arrows-angle-contract:before {
+  content: "\e922";
+}
+.icontract-arrows-angle-expand:before {
+  content: "\e923";
+}
+.icontract-arrows-collapse:before {
+  content: "\e924";
+}
+.icontract-arrows-expand:before {
+  content: "\e925";
+}
+.icontract-arrows-fullscreen:before {
+  content: "\e926";
+}
+.icontract-arrows-move:before {
+  content: "\e927";
+}
+.icontract-aspect-ratio-fill:before {
+  content: "\e928";
+}
+.icontract-aspect-ratio:before {
+  content: "\e929";
+}
+.icontract-at:before {
+  content: "\e92a";
+}
+.icontract-award-fill:before {
+  content: "\e92b";
+}
+.icontract-award:before {
+  content: "\e92c";
+}
+.icontract-backspace-fill:before {
+  content: "\e92d";
+}
+.icontract-backspace-reverse-fill:before {
+  content: "\e92e";
+}
+.icontract-backspace-reverse:before {
+  content: "\e92f";
+}
+.icontract-backspace:before {
+  content: "\e930";
+}
+.icontract-bag-fill:before {
+  content: "\e931";
+}
+.icontract-bag:before {
+  content: "\e932";
+}
+.icontract-bar-chart-fill:before {
+  content: "\e933";
+}
+.icontract-bar-chart:before {
+  content: "\e934";
+}
+.icontract-battery-charging:before {
+  content: "\e935";
+}
+.icontract-battery-full:before {
+  content: "\e936";
+}
+.icontract-battery-half:before {
+  content: "\e937";
+}
+.icontract-battery:before {
+  content: "\e938";
+}
+.icontract-bell-fill:before {
+  content: "\e939";
+}
+.icontract-bell:before {
+  content: "\e93a";
+}
+.icontract-blockquote-left:before {
+  content: "\e93b";
+}
+.icontract-blockquote-right:before {
+  content: "\e93c";
+}
+.icontract-book-half:before {
+  content: "\e93d";
+}
+.icontract-book:before {
+  content: "\e93e";
+}
+.icontract-bookmark-check:before {
+  content: "\e93f";
+}
+.icontract-bookmark-dash:before {
+  content: "\e940";
+}
+.icontract-bookmark-fill:before {
+  content: "\e941";
+}
+.icontract-bookmark-plus:before {
+  content: "\e942";
+}
+.icontract-bookmark:before {
+  content: "\e943";
+}
+.icontract-bookmarks-fill:before {
+  content: "\e944";
+}
+.icontract-bookmarks:before {
+  content: "\e945";
+}
+.icontract-bootstrap-fill:before {
+  content: "\e946";
+}
+.icontract-bootstrap-reboot:before {
+  content: "\e947";
+}
+.icontract-bootstrap:before {
+  content: "\e948";
+}
+.icontract-bounding-box-circles:before {
+  content: "\e949";
+}
+.icontract-bounding-box:before {
+  content: "\e94a";
+}
+.icontract-box-arrow-down-left:before {
+  content: "\e94b";
+}
+.icontract-box-arrow-down-right:before {
+  content: "\e94c";
+}
+.icontract-box-arrow-down:before {
+  content: "\e94d";
+}
+.icontract-box-arrow-in-down-left:before {
+  content: "\e94e";
+}
+.icontract-box-arrow-in-down-right:before {
+  content: "\e94f";
+}
+.icontract-box-arrow-in-down:before {
+  content: "\e950";
+}
+.icontract-box-arrow-in-left:before {
+  content: "\e951";
+}
+.icontract-box-arrow-in-right:before {
+  content: "\e952";
+}
+.icontract-box-arrow-in-up-left:before {
+  content: "\e953";
+}
+.icontract-box-arrow-in-up-right:before {
+  content: "\e954";
+}
+.icontract-box-arrow-in-up:before {
+  content: "\e955";
+}
+.icontract-box-arrow-left:before {
+  content: "\e956";
+}
+.icontract-box-arrow-right:before {
+  content: "\e957";
+}
+.icontract-box-arrow-up-left:before {
+  content: "\e958";
+}
+.icontract-box-arrow-up-right:before {
+  content: "\e959";
+}
+.icontract-box-arrow-up:before {
+  content: "\e95a";
+}
+.icontract-braces:before {
+  content: "\e95b";
+}
+.icontract-briefcase-fill:before {
+  content: "\e95c";
+}
+.icontract-briefcase:before {
+  content: "\e95d";
+}
+.icontract-brightness-alt-high-fill:before {
+  content: "\e95e";
+}
+.icontract-brightness-alt-high:before {
+  content: "\e95f";
+}
+.icontract-brightness-alt-low-fill:before {
+  content: "\e960";
+}
+.icontract-brightness-alt-low:before {
+  content: "\e961";
+}
+.icontract-brightness-high-fill:before {
+  content: "\e962";
+}
+.icontract-brightness-high:before {
+  content: "\e963";
+}
+.icontract-brightness-low-fill:before {
+  content: "\e964";
+}
+.icontract-brightness-low:before {
+  content: "\e965";
+}
+.icontract-brush:before {
+  content: "\e966";
+}
+.icontract-bucket-fill:before {
+  content: "\e967";
+}
+.icontract-bucket:before {
+  content: "\e968";
+}
+.icontract-building:before {
+  content: "\e969";
+}
+.icontract-bullseye:before {
+  content: "\e96a";
+}
+.icontract-calendar-fill:before {
+  content: "\e96b";
+}
+.icontract-calendar:before {
+  content: "\e96c";
+}
+.icontract-camera-video-fill:before {
+  content: "\e96d";
+}
+.icontract-camera-video:before {
+  content: "\e96e";
+}
+.icontract-camera:before {
+  content: "\e96f";
+}
+.icontract-capslock-fill:before {
+  content: "\e970";
+}
+.icontract-capslock:before {
+  content: "\e971";
+}
+.icontract-card-checklist:before {
+  content: "\e972";
+}
+.icontract-card-heading:before {
+  content: "\e973";
+}
+.icontract-card-image:before {
+  content: "\e974";
+}
+.icontract-card-list:before {
+  content: "\e975";
+}
+.icontract-card-text:before {
+  content: "\e976";
+}
+.icontract-caret-down-fill:before {
+  content: "\e977";
+}
+.icontract-caret-down:before {
+  content: "\e978";
+}
+.icontract-caret-left-fill:before {
+  content: "\e979";
+}
+.icontract-caret-left:before {
+  content: "\e97a";
+}
+.icontract-caret-right-fill:before {
+  content: "\e97b";
+}
+.icontract-caret-right:before {
+  content: "\e97c";
+}
+.icontract-caret-up-fill:before {
+  content: "\e97d";
+}
+.icontract-caret-up:before {
+  content: "\e97e";
+}
+.icontract-chat-dots-fill:before {
+  content: "\e97f";
+}
+.icontract-chat-dots:before {
+  content: "\e980";
+}
+.icontract-chat-fill:before {
+  content: "\e981";
+}
+.icontract-chat-quote-fill:before {
+  content: "\e982";
+}
+.icontract-chat-quote:before {
+  content: "\e983";
+}
+.icontract-chat-square-dots-fill:before {
+  content: "\e984";
+}
+.icontract-chat-square-dots:before {
+  content: "\e985";
+}
+.icontract-chat-square-fill:before {
+  content: "\e986";
+}
+.icontract-chat-square-quote-fill:before {
+  content: "\e987";
+}
+.icontract-chat-square-quote:before {
+  content: "\e988";
+}
+.icontract-chat-square:before {
+  content: "\e989";
+}
+.icontract-chat:before {
+  content: "\e98a";
+}
+.icontract-check-all:before {
+  content: "\e98b";
+}
