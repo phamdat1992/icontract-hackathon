@@ -1,106 +1,62 @@
-{% extends 'layout/default.njk' %}
+{% extends 'layout/default.html' %}
+
+{% set configBody = {
+    class: "",
+    id: "create-new-contract-page"
+}%}
 
 {% block content %}
 <main class="dashboard">
-    <aside class="menu">
-        <a class="btn btn-info btn-create-new">
-            <i class="icontract-new"></i>
-            New
-        </a>
-
-        <ul class="menu-list">
-            <li class="active">
-                <a>
-                    <i class="icontract-docs"></i>
-                    My Documents
-                </a>
-            </li>
-            <li class="active">
-                <a>
-                    <i class="icontract-briefcase"></i>
-                    PowerForms
-                </a>
-            </li>
-        </ul>
-
-        <p class="menu-label">
-            QUICK VIEWS
-        </p>
-
-        <ul class="menu-list">
-            <li>
-                <a><i class="icontract-action"></i>
-                    Action Required
-                </a>
-            </li>
-            <li>
-                <a>
-                    <i class="icontract-waiting"></i>
-                    Waiting for Others
-                </a>
-            </li>
-            <li>
-                <a>
-                    <i class="icontract-complete"></i>
-                    Completed
-                </a>
-            </li>
-        </ul>
-    </aside>
+    {% include 'components/sidebar.html' %}
 
     <div class="content">
         <div class="content__header">
-            <h3>New Contract</h3>
+            <h3>Tạo mới hợp đồng</h3>
         </div>
 
         <div class="content__main">
-            <div class='form-group-custom form-group-custom--file mb-4'>
-                <label>
-                    <input hidden type='file' />
-                    <div>
-                        <strong>Upload contract</strong>
-                        <p class="file-name"></p>
-                        <p>Supported format: PDF, DOC, DOCX - Max size: 4 MB</p>
+            <div class="create-new">
+                <div class='form-group-custom form-group-custom--file mb-4' id='upload-contract'>
+                    <label>
+                        <input hidden type='file' accept="" />
+                        <div>
+                            <strong>Upload hợp đồng của bạn</strong>
+                            <p class="file-name"></p>
+                            <p>Hỗ trợ định dạng: PDF, DOC, DOCX - Dung lượng tối đa: 4 MB</p>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="add-receiver mb-3">
+                    <div class="form-group">
+                        <label for="name">Tên</label>
+                        <input type="text" value="Phạm Hữu Thạnh Đạt" class="form-control" id="name">
                     </div>
-                </label>
-            </div>
 
-            <div class="add-receiver mb-5">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Tên</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                        </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input value="dathtp@gmail.com" type="text" class="form-control" id="email">
+                    </div>
 
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Email</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-
-                        <div class="text-right">
-                            <button class="btn btn-info btn-sm">
-                                Thêm người nhận
-                            </button>
-                        </div>
+                    <div class="text-right">
+                        <button class="btn btn-yellow btn-sm">
+                            Thêm người nhận
+                        </button>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Tiêu đề</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
+                <div class="form-group">
+                    <label for="name-contract">Tiêu đề</label>
+                    <input type="text" value="Hợp đồng doanh nghiệp" class="form-control" id="name-contract">
+                </div>
 
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Nội dung</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
+                <div class="form-group">
+                    <label for="content-contract">Nội dung</label>
+                    <textarea class="form-control" id="content-contract" rows="4">Hợp đồng cần ký kết</textarea>
+                </div>
 
-                    <a href="./review-contract.html" class="btn btn-info">
+                <div class="text-center">
+                    <a href="./review-contract.html" class="btn btn-yellow">
                         Tiếp tục
                         <i class="icontract-arrow-right"></i>
                     </a>

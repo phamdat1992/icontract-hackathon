@@ -1,67 +1,22 @@
-{% extends 'layout/default.njk' %}
+{% extends 'layout/default.html' %}
 
 {% block content %}
-
 <main class="dashboard">
-    <aside class="menu">
-        <a href="./create-contract.html" class="btn btn-info btn-create-new">
-            <i class="icontract-new"></i>
-            New
-        </a>
-
-        <ul class="menu-list">
-            <li class="active">
-                <a>
-                    <i class="icontract-docs"></i>
-                    My Documents
-                </a>
-            </li>
-            <li class="active">
-                <a>
-                    <i class="icontract-briefcase"></i>
-                    PowerForms
-                </a>
-            </li>
-        </ul>
-
-        <p class="menu-label">
-            QUICK VIEWS
-        </p>
-
-        <ul class="menu-list">
-            <li>
-                <a><i class="icontract-action"></i>
-                    Action Required
-                </a>
-            </li>
-            <li>
-                <a>
-                    <i class="icontract-waiting"></i>
-                    Waiting for Others
-                </a>
-            </li>
-            <li>
-                <a>
-                    <i class="icontract-complete"></i>
-                    Completed
-                </a>
-            </li>
-        </ul>
-    </aside>
+    {% include 'components/sidebar.html' %}
 
     <div class="content">
         <div class="content__header">
-            <h3>My Documents</h3>
+            <h3>Hợp đồng</h3>
             <div class="filter">
                 <div class="filter__by">
-                    Filtered by: Date (Last 6 Months)
+                    <span>Được lọc bởi:</span> 01 ngày trước
                 </div>
                 <div class="filter__actions">
                     <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Search all documents">
+                        <input type="email" class="form-control" placeholder="Tìm kiếm hợp đồng">
                         <div class="input-group-append">
                             <button class="btn btn-light-2 border">
-                                Search
+                                Tìm kiếm
                             </button>
                         </div>
                     </div>
@@ -70,35 +25,35 @@
         </div>
 
         <div class="content__main">
+            {% block items %}
             <div class="items">
-                {% for i in range(0, 4) %}
                 <div class="item">
                     <div class="item__info">
-                        <div class="item__info__title">Please DocuSign: TestPA.doc</div>
+                        <div class="item__info__title">DocuSign: TestPA.doc</div>
                         <div class="item__info__to">To: John Smith, Seth Williams</div>
                     </div>
                     <div class="item__status">
-                        <div class="current">Completed</div>
+                        <div class="current">Hoàn thành</div>
                         <div class="last-change">
-                            Last change on 5/23/2017 | 03:30:05 pm
+                            Lần thay đổi cuối 5/23/2017 | 03:30:05 pm
                         </div>
                     </div>
                     <div class="item__action">
                         <div class="dropdown">
                             <button class="btn btn-light-2 dropdown-toggle btn-sm" type="button" id="dropdownMenuButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                actions
+                                Thao tác
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Forward</a>
-                                <a class="dropdown-item" href="#">Create a copy</a>
-                                <a class="dropdown-item" href="#">Delete</a>
+                                <a class="dropdown-item" href="#">Chuyển tiếp</a>
+                                <a class="dropdown-item" href="#">Tạo một bản sao</a>
+                                <a class="dropdown-item" href="#">Xoá</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                {% endfor %}
             </div>
+            {% endblock %}
         </div>
     </div>
 </main>
