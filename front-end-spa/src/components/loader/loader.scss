@@ -1,0 +1,60 @@
+.loader {
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+
+    .loader__item {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin: 1px;
+            border-radius: 50%;
+            border: 3px solid #009cdb;
+            border-color: #009cdb transparent #009cdb transparent;
+            animation: lds-dual-ring .6s linear infinite;
+        }
+    }
+
+    &.loader--full-viewport {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        background-color: rgba($color: #000000, $alpha: .6);
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+        padding: 0;
+    }
+
+    &.loader--full {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        padding: 0;
+    }
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
