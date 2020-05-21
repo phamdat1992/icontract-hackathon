@@ -141,3 +141,21 @@
 .form-control[readonly] {
     background-color: transparent;
 }
+
+.form-frame {
+    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+    padding: 30px 20px 10px;
+    margin: 0 5px;
+    max-width: initial;
+    position: relative;
+    border-radius: 5px;
+
+    h4 {
+        position: absolute;
+        font-size: 20px;
+        height: 20px;
+        top: -14px;
+        padding: 0 10px;
+        background-color: #fff;
+    }
+}

@@ -1,5 +1,5 @@
 
-function ContractCreation() {
+function handleCreateNewContract() {
     function handleChoseFile(evt) {
         const $files = evt.target;
         const { files } = $files;
@@ -13,12 +13,10 @@ function ContractCreation() {
         }
     }
 
-    function initFiles() {
-        const $file = document.getElementById('upload-contract');
-        $file.addEventListener('change', handleChoseFile);
-    }
-
-    initFiles();
+    const $file = document.getElementById('upload-contract');
+    $file.addEventListener('change', handleChoseFile);
 }
 
-export default ContractCreation;
+export {
+    handleCreateNewContract
+};

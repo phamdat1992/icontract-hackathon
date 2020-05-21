@@ -1,50 +1,39 @@
 {% extends 'layout/default.html' %}
+{% import './macros/content-header.html' as ContentHeader %}
 
 {% block content %}
 <main class="dashboard">
     {% include 'components/sidebar.html' %}
-
     <div class="content">
-        <div class="content__header">
-            <h3>Hợp đồng</h3>
-            <div class="filter">
-                <div class="filter__by">
-                    <span>Được lọc bởi:</span> 01 ngày trước
-                </div>
-                <div class="filter__actions">
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Tìm kiếm hợp đồng">
-                        <div class="input-group-append">
-                            <button class="btn btn-light-2 border">
-                                Tìm kiếm
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {{ ContentHeader.render("Hợp đồng") }}
 
-        <div class="content__main">
+        <div class="content-main">
             {% block items %}
             <div class="items">
                 <div class="item">
-                    <div class="item__info">
-                        <div class="item__info__title">DocuSign: TestPA.doc</div>
-                        <div class="item__info__to">To: John Smith, Seth Williams</div>
+                    <div class="item-info">
+                        <div class="item-info-title">
+                            <a href="./review-contract.html" title="Click để xem Hợp đồng">
+                                Hợp đồng doanh nghiệp
+                            </a>
+                        </div>
+                        <div class="item-info-to">To: Phạm Hữu Thạnh Đạt</div>
                     </div>
-                    <div class="item__status">
-                        <div class="current">Hoàn thành</div>
+                    <div class="item-status">
+                        <div class="current">
+                            Hoàn thành
+                        </div>
                         <div class="last-change">
-                            Lần thay đổi cuối 5/23/2017 | 03:30:05 pm
+                            Lần thay đổi cuối 20/05/2020 | 11:48:05 am
                         </div>
                     </div>
-                    <div class="item__action">
+                    <div class="item-action">
                         <div class="dropdown">
-                            <button class="btn btn-light-2 dropdown-toggle btn-sm" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-light-2" type="button">
                                 Thao tác
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./images/hopdong.pdf" download>Tải xuống</a>
                                 <a class="dropdown-item" href="#">Chuyển tiếp</a>
                                 <a class="dropdown-item" href="#">Tạo một bản sao</a>
                                 <a class="dropdown-item" href="#">Xoá</a>

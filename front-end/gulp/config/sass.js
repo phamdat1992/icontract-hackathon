@@ -1,7 +1,7 @@
 const config = require('./index');
 
 module.exports = {
-    src: config.srcDir + '/css/sass',
+    src: config.srcDir + '/sass',
     dest: config.destDir + '/css',
     pattern: '/**/*.{sass,scss}',
     settings: {

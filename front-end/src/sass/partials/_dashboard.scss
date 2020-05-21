@@ -74,14 +74,39 @@
     }
 
     .content {
-        padding: 20px;
+        padding: 20px 20px 50px;
         width: 100%;
         overflow: auto;
 
-        &__header {
+        .content-header {
             margin-bottom: 20px;
             padding-bottom: 10px;
             border-bottom: 1px solid #e9e9e9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .user {
+                text-align: right;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+
+                .user-info {
+                    display: inline-block;
+
+                    .avatar {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: 1px solid #eee;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 5px;
+                    }
+                }
+            }
 
             h3 {
                 font-size: 20px;
@@ -93,8 +118,9 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                width: 100%;
 
-                &__actions {
+                .filter-actions {
                     display: flex;
                     align-items: center;
 
@@ -103,7 +129,7 @@
                     }
                 }
 
-                &__by {
+                .filter-by {
                     span {
                         color: #aaa;
                     }
@@ -111,7 +137,7 @@
             }
         }
 
-        &__main {
+        .content-main {
             .items {
                 .item {
                     display: flex;
@@ -120,17 +146,17 @@
                     margin-bottom: 8px;
                     font-size: 16px;
 
-                    &__info {
+                    .item-info {
                         flex-grow: 1;
                         padding-right: 10px;
 
-                        &__to {
+                        .item-info-to {
                             color: #aaa;
                             font-size: 12px;
                         }
                     }
 
-                    &__status {
+                    .item-status {
                         padding: 0 10px;
 
                         .last-change {
@@ -139,7 +165,7 @@
                         }
                     }
 
-                    &__action {
+                    .item-action {
                         padding-left: 10px;
                         flex-shrink: 0;
                         display: flex;

@@ -1,7 +1,7 @@
 import flatpickr from "flatpickr";
 import 'flatpickr/dist/flatpickr.min.css';
 
-function Info() {
+function handleInfo() {
     const validObj = {
         birthday: false,
         dayRelease: false,
@@ -116,4 +116,6 @@ function Info() {
     initInputs();
 }
 
-export default Info;
+export {
+    handleInfo
+};

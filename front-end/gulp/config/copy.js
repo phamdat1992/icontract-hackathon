@@ -2,8 +2,7 @@ const config = require('./');
 
 module.exports = {
     src: [
-        config.srcDir + '/fonts/**/*.*',
-        config.srcDir + '/images/**/*.*',
+        config.srcDir + '/assets/**/*.*'
     ],
     dest: config.destDir,
     options: {
