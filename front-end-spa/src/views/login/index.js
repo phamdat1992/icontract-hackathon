@@ -43,12 +43,12 @@ function Login() {
             }, 1000);
         }));
 
+        setLoading(false);
+
         if (data) {
             setResp(data);
             Store.set('email', { value: 'vinhmai079@gmail.com' });
         }
-
-        setLoading(false);
     }
 
     function onEmailChange(evt) {
@@ -57,7 +57,7 @@ function Login() {
     }
 
     if (resp) {
-        return <Redirect to='/dashboard' />
+        return <Redirect to='/registered' />
     }
 
     return (

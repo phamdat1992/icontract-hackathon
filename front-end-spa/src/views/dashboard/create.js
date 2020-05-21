@@ -16,23 +16,23 @@ function CreateContract() {
 
             <div className="add-receiver mb-3">
                 <div className="form-group">
-                    <label for="name">Tên</label>
+                    <label htmlFor="name">Tên</label>
                     <input type="text" className="form-control" id="name" />
                 </div>
 
                 <div className="form-group">
-                    <label for="email">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input type="text" className="form-control" id="email" />
                 </div>
             </div>
 
             <div className="form-group">
-                <label for="name-contract">Tiêu đề</label>
+                <label htmlFor="name-contract">Tiêu đề</label>
                 <input type="text" className="form-control" id="name-contract" />
             </div>
 
             <div className="form-group">
-                <label for="content-contract">Nội dung</label>
+                <label htmlFor="content-contract">Nội dung</label>
                 <textarea className="form-control" id="content-contract" rows="4"></textarea>
             </div>
 

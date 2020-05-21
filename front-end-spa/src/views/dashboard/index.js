@@ -4,11 +4,10 @@ import Header from './header';
 
 function Dashboard() {
     return (
-        <main class="dashboard">
+        <main className="dashboard">
             <Sidebar />
-            <div class="content">
+            <div className="content">
                 <Header title='Hợp đồng' />
-
             </div>
         </main>
     );

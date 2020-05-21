@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import './assest/fonts/style.css';
 import './sass/main.scss';
 
@@ -8,45 +7,30 @@ import Login from './views/login';
 import Registered from './views/registered';
 import Info from './views/info';
 import Dashboard from './views/dashboard';
+import { useHistory } from 'react-router-dom';
 import Store from 'store';
-import { Redirect } from 'react-router-dom';
-
-const RouteWithAuth = (component) => {
-    const email = Store.get('email');
-    if (!email) {
-        return <Redirect to='/login' />
-    }
-
-    return component;
-};
 
 function App() {
+    const history = useHistory();
+    React.useState(() => {
+        const email = Store.get('email');
+        if (!email) {
+            history.push('/login');
+        } else {
+            history.push('/dashboard');
+        }
 
+        return email;
+    });
 
     return (
         <Switch>
-            <Route exact path="/login">
-                <Login />
-            </Route>
-            <Route exact path="/registered">
-                <Registered />
-            </Route>
-            <Route exact path="/info">
-                <Info />
-            </Route>
-            <Route exact path="/dashboard">
-                <Dashboard />
-            </Route>
-            <Route
-                path='/'
-                render={() => RouteWithAuth(Login)}
-            />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/registered" component={Registered} />
+            <Route exact path="/info" component={Info} />
+            <Route exact path="/dashboard" component={Dashboard} />
         </Switch>
     );
 }
-
-App.propTypes = {
-    history: PropTypes.object,
-};
 
 export default App;

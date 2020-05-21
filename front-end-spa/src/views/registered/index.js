@@ -3,6 +3,11 @@ import React from 'react';
 import QRCode from '../../assest/electric-sign.png';
 
 function Registered() {
+
+    function onBtnActiveClick() {
+
+    }
+
     return (
         <main className='form-registerd container'>
             <div className="row mb-2">
@@ -68,18 +73,18 @@ function Registered() {
 
                             <div className="form-active">
                                 <div className="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" readonly value="dathtp@gmail.com" className="form-control" id="email" />
+                                    <label htmlFor="email">Email</label>
+                                    <input type="email" readOnly defaultValue="dathtp@gmail.com" className="form-control" id="email" />
                                 </div>
 
                                 <div className="form-group">
-                                    <label for="secret-key">Secret key</label>
-                                    <input type="text" readonly value="7DDF-B236-7023-82A6-F70F-0001" className="form-control"
+                                    <label htmlFor="secret-key">Secret key</label>
+                                    <input type="text" readOnly defaultValue="7DDF-B236-7023-82A6-F70F-0001" className="form-control"
                                         id="secret-key" />
                                 </div>
 
                                 <div className="form-group">
-                                    <label className="required" for="otp">OTP</label>
+                                    <label className="required" htmlFor="otp">OTP</label>
                                     <input type="password" className="form-control" id="otp" />
                                 </div>
                             </div>
@@ -89,10 +94,10 @@ function Registered() {
             </div>
 
             <div className="buttons text-center">
-                <a href="./dashboard.html" className="btn btn-yellow">
+                <button onClick={onBtnActiveClick} className="btn btn-yellow">
                     Kích hoạt
-            <i className="icontract-arrow-right"></i>
-                </a>
+                    <i className="icontract-arrow-right"></i>
+                </button>
             </div>
         </main>
     );

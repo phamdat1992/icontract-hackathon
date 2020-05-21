@@ -1,0 +1,19 @@
+{% extends 'layout/default.html' %}
+
+{% set configBody = {
+    class: "",
+    id: "review-contract"
+}%}
+
+{% block content %}
+<div class="review-contract">
+    <div class="review-wrapper">
+        <embed src="../assets/contract-template-a.pdf" type="application/pdf" />
+    </div>
+    <div class="buttons text-center">
+        <a href="./dashboard.html" type="button" class="btn btn-light">
+            Huỷ
+        </a>
+    </div>
+</div>
+{% endblock %}
