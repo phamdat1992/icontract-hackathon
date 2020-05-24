@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'wh-tools-live.cluster-cc1zmkl8ljww.ap-southeast-1.rds.amazonaws.com';
-$db['default']['username'] = 'refund_form_id';
-$db['default']['password'] = 'daTfdzmb6fdcubc';
-$db['default']['database'] = 'return_item_id';
+$db['default']['hostname'] = getenv('MYSQL_HOST', true);
+$db['default']['username'] = getenv('MYSQL_USERNAME', true);
+$db['default']['password'] = getenv('MYSQL_PASSWORD', true);
+$db['default']['database'] = getenv('DATABASE_NAME', true);
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
